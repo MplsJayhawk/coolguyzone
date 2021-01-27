@@ -1,0 +1,39 @@
+<html>
+
+<p style="text-align: center;"><strong><img style="border-style: groove;" src="/images/landing.jpg" alt="" width="800"
+            height="522" /></strong></p>
+
+<script type="text/javascript">
+    function fn1() {
+        var str = document.getElementById("name").value;
+        var inputname = str.toUpperCase();
+
+        switch (inputname) {
+            case "BRIAN":
+                alert(inputname + " Is a pretty cool name.  you can stay...");
+                location.replace('/TheZone.html')
+                break;
+            case "JOE":
+                alert(inputname + " Is a pretty cool name.  you can stay...");
+                location.replace('/TheZone.html')
+                break;
+            default:
+                alert("GET THE HELL OUT " + inputname + "!!!" + " Only Cool guys.");
+
+        }
+
+
+    }
+
+</script>
+
+
+<body>
+    <center><input id="name" placeholder="Enter your Name">
+        <br>
+        <button onclick="fn1()" id="btn1">Enter</button>
+    </center>
+
+</body>
+
+</html>
